@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Light Control</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Light Control</h1>
+
+    <!-- Перемикач режиму-->
+    <div class="switch-container">
+      <span class="switch-label">Manual</span>
+      <label class="switch">
+        <input type="checkbox" id="modeSwitch">
+        <span class="slider"></span>
+      </label>
+      <span class="switch-label">Automatic</span>
+    </div>
+
+    <!-- Інформація про стан світла on/off. ``???`` якщо немає підключення -->
+    <div id="modeDisplay">Mode: ???</div>
+    <div id="info">Light: ???</div>
+
+    <!-- Кнопка ручного керування -->
+    <button id="toggleBtn">Toggle Light</button>
+
+
+
+    <!-- Блок налаштування автономного режиму -->
+
+    <div id="autoSettings" class="container">
+      <h2>Automatic Mode</h2>
+      <label>Start Time:</label>
+      <input type="time" id="startTime">
+
+      <label>End Time:</label>
+      <input type="time" id="endTime">
+
+      <button id="setAutoBtn">Set Auto Mode</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
